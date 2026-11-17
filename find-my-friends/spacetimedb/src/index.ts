@@ -10,6 +10,7 @@ const user = table(
     name: t.string(),
     lat: t.f64(),
     lng: t.f64(),
+    
     online: t.bool()
   }
 )

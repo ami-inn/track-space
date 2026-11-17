@@ -11,21 +11,22 @@ Install the [SpacetimeDB CLI](https://spacetimedb.com/install) before continuing
 
 ## Create your project
 
-Run the `spacetime dev` command to create a new project with a SpacetimeDB module and Next.js client.
+From this project directory, run the `spacetime dev` command against the local server.
 
 This will start the local SpacetimeDB server, publish your module, generate TypeScript bindings, and start the Next.js development server.
 
 ```bash
-spacetime dev --template nextjs-ts
+spacetime dev --server local
 ```
 
 
 
 ## Open your app
 
-Navigate to [http://localhost:3000](http://localhost:3000) to see your app running.
+Navigate to [http://localhost:3001](http://localhost:3001) to see your app running. The local SpacetimeDB server uses port 3000.
 
 The `spacetime dev` command automatically configures your app to connect to SpacetimeDB via environment variables in `.env.local`.
+If running the servers separately, start SpacetimeDB and publish the module to the local server before running `npm run dev`. Ensure `NEXT_PUBLIC_SPACETIMEDB_HOST` points to the database server, such as `ws://127.0.0.1:3000`, not the Next.js port. Restart Next.js after changing `.env.local` or its port.
 
 
 
