@@ -25,3 +25,6 @@ Next steps:
   spacetime publish --module-path spacetimedb --server local find-my-friends-q4fsb
   spacetime generate --lang typescript --out-dir src/module_bindings --module-path spacetimedb
   npm run dev
+
+
+spacetime publish to publish the module to the server.
